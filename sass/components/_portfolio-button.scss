@@ -2,10 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    
+  
+    @media screen and (max-width: (768px-0.02)) {
+        width: 326px;
+    }
    
     margin-bottom: 40px;
-margin-right: 110px;
+
     @media screen and(min-width:768px ){
         justify-content: center;
         margin-bottom: 30px;
