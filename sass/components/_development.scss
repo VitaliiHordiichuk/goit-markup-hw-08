@@ -10,16 +10,17 @@
 
 .work {
     display: flex;
+    gap: 30px;
 }
 
 .work__item {
-    margin-right: 30px;
+    
     position: relative;
+    width: calc((100% - 60px)/3);
 }
 
-.work__item:last-child {
-    margin-right: 0px;
-}
+
+    
 
 .work__development {
     position: absolute;
