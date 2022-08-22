@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="uk">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+          <title>Портфолио</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+               rel="stylesheet"
+          />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+          />
+          <link rel="stylesheet" href="./css/main.min.css" />
+     </head>
+
+     <body class="page">
+          <!--шапка сайта-->
+          <header class="header">
+               <div class="conteiner header__conteiner">
+                    <a href="./index.html" class="logo"
+                         >Web<span class="logo__head">Studio</span></a
+                    >
+                    <div class="header__nave" data-menu>
+                         <nav class="nave">
+                              <ul class="nave-site list">
+                                   <li class="nave-site__item">
+                                        <a href="./index.html" class="nave-site__link">Студія</a>
+                                   </li>
+                                   <li class="nave-site__item">
+                                        <a href="./portfolio.html" class="nave-site__link current"
+                                             >Портфоліо</a
+                                        >
+                                   </li>
+                                   <li class="nave-site__item">
+                                        <a href="" class="nave-site__link">Контакти</a>
+                                   </li>
+                              </ul>
+                         </nav>
+                         <ul class="contacts-header list">
+                              <li class="contacts-header__item">
+                                   <a
+                                        href="mailto:info@devstudio.com"
+                                        class="contacts-header__contact"
+                                   >
+                                        <span
+                                             class="contacts-header__icon contacts-header__icon--letter"
+                                        >
+                                             <svg width="16px" height="12px">
+                                                  <use href="./images/symbol-defs.svg#letter"></use>
+                                             </svg>
+                                        </span>
+                                        info@devstudio.com
+                                   </a>
+                              </li>
+                              <li class="contacts-header__item">
+                                   <a href=":+380961111111" class="contacts-header__contact">
+                                        <span
+                                             class="contacts-header__icon contacts-header__icon--letter"
+                                        >
+                                             <svg width="10px" height="16px">
+                                                  <use
+                                                       href="./images/symbol-defs.svg#smartphone"
+                                                  ></use>
+                                             </svg> </span
+                                        >+38 096 111 11 11</a
+                                   >
+                              </li>
+                         </ul>
+
+                         <ul class="header-network list">
+                              <li class="header-network__item"
+                                   ><a href="" class="header-network__site">Instagram</a></li
+                              >
+                              <li class="header-network__item"
+                                   ><a href="" class="header-network__site">Twitter</a></li
+                              >
+                              <li class="header-network__item"
+                                   ><a href="" class="header-network__site">Facebook</a></li
+                              >
+                              <li class="header-network__item"
+                                   ><a href="" class="header-network__site">LinkedIn</a></li
+                              >
+                         </ul>
+                    </div>
+                    <button type="button " class="menu-button" data-menu-button>
+                         <svg width="40px" height="40px">
+                              <use
+                                   href="./images/symbol-defs.svg#icon-menu_40px"
+                                   class="menu-button__menu"
+                              ></use>
+                              <use
+                                   href="./images/symbol-defs.svg#icon-close_40px"
+                                   class="menu-button__close"
+                              ></use>
+                         </svg>
+                    </button>
+               </div>
+          </header>
+          <!--основний контент-->
+
+          <main class="main-portfolio">
+               <!-- Портфоліо -->
+               <section class="section">
+                    <div class="conteiner">
+                         <h1 class="visually-hidden">Портфоліо</h1>
+                         <ul class="filter list">
+                              <li class="filter__item">
+                                   <button type="button" class="filter-button active">Усі</button>
+                              </li>
+                              <li class="filter__item">
+                                   <button type="button" class="filter-button">Веб-сайти</button>
+                              </li>
+                              <li class="filter__item">
+                                   <button type="button" class="filter-button">Додатки</button>
+                              </li>
+                              <li class="filter__item">
+                                   <button type="button" class="filter-button">Дизайн</button>
+                              </li>
+                              <li class="filter__item">
+                                   <button type="button" class="filter-button">Маркетинг</button>
+                              </li>
+                         </ul>
+                         <ul class="card-set list">
+                              <li class="card-set__item">
+                                   <a href="" class="product">
+                                        <div class="product__description">
+                                             <picture>
+                                                  <source
+                                                       media="(min-width: 1200px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-1-desk@1x.png,
+                                                            ./images/portfolio/prt-1-desk@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(min-width: 768px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-1-tabl@1x.png,
+                                                            ./images/portfolio/prt-1-tabl@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(max-width: 767px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-1-mob@1x.png,
+                                                            ./images/portfolio/prt-1-mob@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+
+                                                  <img
+                                                       class="team-foto"
+                                                       src="./images/portfolio/prt-1-mob@1x.png"
+                                                       alt="Приклад роботи"
+                                                       width="450px"
+                                                       height="294"
+                                                       loading="lazy"
+                                                  />
+                                             </picture>
+
+                                             <p class="product__position">
+                                                  Ресурс пропонує комплексні пропозиції з різним
+                                                  рівнем функціоналу та сервісів. Все це дозволить
+                                                  відвідувачу отримати вичерпні відомості про
+                                                  компанію чи приватну особу.
+                                             </p>
+                                        </div>
+                                        <div class="product-work">
+                                             <h3 class="product-work__title">Технокряк</h3>
+                                             <p class="product-work__description">Веб-сайт</p>
+                                        </div></a
+                                   >
+                              </li>
+                              <li class="card-set__item">
+                                   <a href="" class="product">
+                                        <div class="product__description">
+                                             <picture>
+                                                  <source
+                                                       media="(min-width: 1200px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-2-desk@1x.png,
+                                                            ./images/portfolio/prt-2-desk@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(min-width: 768px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-2-tabl@1x.png,
+                                                            ./images/portfolio/prt-2-tabl@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(max-width: 767px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-2-mob@1x.png,
+                                                            ./images/portfolio/prt-2-mob@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+
+                                                  <img
+                                                       class="team-foto"
+                                                       src="./images/portfolio/prt-2-mob@1x.png"
+                                                       alt="Приклад роботи"
+                                                       width="450px"
+                                                       height="294"
+                                                       loading="lazy"
+                                                  />
+                                             </picture>
+                                             <p class="product__position">
+                                                  Ресурс пропонує комплексні пропозиції з різним
+                                                  рівнем функціоналу та сервісів. Все це дозволить
+                                                  відвідувачу отримати вичерпні відомості про
+                                                  компанію чи приватну особу.
+                                             </p>
+                                        </div>
+                                        <div class="product-work">
+                                             <h3 class="product-work__title"
+                                                  >Постер New Orlean vs Golden Star</h3
+                                             >
+                                             <p class="product-work__description">Дизайн</p>
+                                        </div>
+                                   </a>
+                              </li>
+                              <li class="card-set__item">
+                                   <a href="" class="product">
+                                        <div class="product__description">
+                                             <picture>
+                                                  <source
+                                                       media="(min-width: 1200px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-3-desk@1x.png,
+                                                            ./images/portfolio/prt-3-desk@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(min-width: 768px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-3-tabl@1x.png,
+                                                            ./images/portfolio/prt-3-tabl@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(max-width: 767px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-3-mob@1x.png,
+                                                            ./images/portfolio/prt-3-mob@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+
+                                                  <img
+                                                       class="team-foto"
+                                                       src="./images/portfolio/prt-3-mob@1x.png"
+                                                       alt="Приклад роботи"
+                                                       width="450px"
+                                                       height="294"
+                                                       loading="lazy"
+                                                  />
+                                             </picture>
+                                             <p class="product__position">
+                                                  Ресурс пропонує комплексні пропозиції з різним
+                                                  рівнем функціоналу та сервісів. Все це дозволить
+                                                  відвідувачу отримати вичерпні відомості про
+                                                  компанію чи приватну особу.
+                                             </p>
+                                        </div>
+                                        <div class="product-work">
+                                             <h3 class="product-work__title">Ресторан Seafood</h3>
+                                             <p class="product-work__description">Додаток</p>
+                                        </div></a
+                                   >
+                              </li>
+                              <li class="card-set__item">
+                                   <a href="" class="product">
+                                        <div class="product__description">
+                                             <picture>
+                                                  <source
+                                                       media="(min-width: 1200px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-4-desk@1x.png,
+                                                            ./images/portfolio/prt-4-desk@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(min-width: 768px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-4-tabl@1x.png,
+                                                            ./images/portfolio/prt-4-tabl@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(max-width: 767px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-4-mob@1x.png,
+                                                            ./images/portfolio/prt-4-mob@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+
+                                                  <img
+                                                       class="team-foto"
+                                                       src="./images/portfolio/prt-4-mob@1x.png"
+                                                       alt="Приклад роботи"
+                                                       width="450px"
+                                                       height="294"
+                                                       loading="lazy"
+                                                  />
+                                             </picture>
+                                             <p class="product__position">
+                                                  Ресурс пропонує комплексні пропозиції з різним
+                                                  рівнем функціоналу та сервісів. Все це дозволить
+                                                  відвідувачу отримати вичерпні відомості про
+                                                  компанію чи приватну особу.
+                                             </p>
+                                        </div>
+                                        <div class="product-work">
+                                             <h3 class="product-work__title">Проєкт Prime</h3>
+                                             <p class="product-work__description">Маркетинг</p>
+                                        </div></a
+                                   >
+                              </li>
+                              <li class="card-set__item">
+                                   <a href="" class="product">
+                                        <div class="product__description">
+                                             <picture>
+                                                  <source
+                                                       media="(min-width: 1200px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-5-desk@1x.png,
+                                                            ./images/portfolio/prt-5-desk@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(min-width: 768px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-5-tabl@1x.png,
+                                                            ./images/portfolio/prt-5-tabl@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(max-width: 767px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-5-mob@1x.png,
+                                                            ./images/portfolio/prt-5-mob@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+
+                                                  <img
+                                                       class="team-foto"
+                                                       src="./images/portfolio/prt-5-mob@1x.png"
+                                                       alt="Приклад роботи"
+                                                       width="450px"
+                                                       height="294"
+                                                       loading="lazy"
+                                                  />
+                                             </picture>
+                                             <p class="product__position">
+                                                  Ресурс пропонує комплексні пропозиції з різним
+                                                  рівнем функціоналу та сервісів. Все це дозволить
+                                                  відвідувачу отримати вичерпні відомості про
+                                                  компанію чи приватну особу.
+                                             </p>
+                                        </div>
+                                        <div class="product-work">
+                                             <h3 class="product-work__title">Проєкт Boxes</h3>
+                                             <p class="product-work__description">Даток</p>
+                                        </div></a
+                                   >
+                              </li>
+                              <li class="card-set__item">
+                                   <a href="" class="product">
+                                        <div class="product__description">
+                                             <picture>
+                                                  <source
+                                                       media="(min-width: 1200px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-6-desk@1x.png,
+                                                            ./images/portfolio/prt-6-desk@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(min-width: 768px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-6-tabl@1x.png,
+                                                            ./images/portfolio/prt-6-tabl@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(max-width: 767px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-6-mob@1x.png,
+                                                            ./images/portfolio/prt-6-mob@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+
+                                                  <img
+                                                       class="team-foto"
+                                                       src="./images/portfolio/prt-6-mob@1x.png"
+                                                       alt="Приклад роботи"
+                                                       width="450px"
+                                                       height="294"
+                                                       loading="lazy"
+                                                  />
+                                             </picture>
+                                             <p class="product__position">
+                                                  Ресурс пропонує комплексні пропозиції з різним
+                                                  рівнем функціоналу та сервісів. Все це дозволить
+                                                  відвідувачу отримати вичерпні відомості про
+                                                  компанію чи приватну особу.
+                                             </p>
+                                        </div>
+                                        <div class="product-work">
+                                             <h3 class="product-work__title"
+                                                  >Inspiration has no Borders</h3
+                                             >
+                                             <p class="product-work__description">Веб-сайт</p>
+                                        </div></a
+                                   >
+                              </li>
+                              <li class="card-set__item">
+                                   <a href="" class="product">
+                                        <div class="product__description">
+                                             <picture>
+                                                  <source
+                                                       media="(min-width: 1200px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-7-desk@1x.png,
+                                                            ./images/portfolio/prt-7-desk@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(min-width: 768px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-7-tabl@1x.png,
+                                                            ./images/portfolio/prt-7-tabl@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(max-width: 767px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-7-mob@1x.png,
+                                                            ./images/portfolio/prt-7-mob@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+
+                                                  <img
+                                                       class="team-foto"
+                                                       src="./images/portfolio/prt-7-mob@1x.png"
+                                                       alt="Приклад роботи"
+                                                       width="450px"
+                                                       height="294"
+                                                       loading="lazy"
+                                                  />
+                                             </picture>
+                                             <p class="product__position">
+                                                  Ресурс пропонує комплексні пропозиції з різним
+                                                  рівнем функціоналу та сервісів. Все це дозволить
+                                                  відвідувачу отримати вичерпні відомості про
+                                                  компанію чи приватну особу.
+                                             </p>
+                                        </div>
+                                        <div class="product-work">
+                                             <h3 class="product-work__title"
+                                                  >Видання Limited Edition</h3
+                                             >
+                                             <p class="product-work__description">Дизайн</p>
+                                        </div></a
+                                   >
+                              </li>
+                              <li class="card-set__item">
+                                   <a href="" class="product">
+                                        <div class="product__description">
+                                             <picture>
+                                                  <source
+                                                       media="(min-width: 1200px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-8-desk@1x.png,
+                                                            ./images/portfolio/prt-8-desk@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(min-width: 768px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-8-tabl@1x.png,
+                                                            ./images/portfolio/prt-8-tabl@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(max-width: 767px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-8-mob@1x.png,
+                                                            ./images/portfolio/prt-8-mob@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+
+                                                  <img
+                                                       class="team-foto"
+                                                       src="./images/portfolio/prt-8-mob@1x.png"
+                                                       alt="Приклад роботи"
+                                                       width="450px"
+                                                       height="294"
+                                                       loading="lazy"
+                                                  />
+                                             </picture>
+                                             <p class="product__position">
+                                                  Ресурс пропонує комплексні пропозиції з різним
+                                                  рівнем функціоналу та сервісів. Все це дозволить
+                                                  відвідувачу отримати вичерпні відомості про
+                                                  компанію чи приватну особу.
+                                             </p>
+                                        </div>
+                                        <div class="product-work">
+                                             <h3 class="product-work__title">Проєкт LAB</h3>
+                                             <p class="product-work__description">Маркетинг</p>
+                                        </div></a
+                                   >
+                              </li>
+                              <li class="card-set__item">
+                                   <a href="" class="product">
+                                        <div class="product__description">
+                                             <picture>
+                                                  <source
+                                                       media="(min-width: 1200px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-9-desk@1x.png,
+                                                            ./images/portfolio/prt-9-desk@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(min-width: 768px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-9-tabl@1x.png,
+                                                            ./images/portfolio/prt-9-tabl@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+                                                  <source
+                                                       media="(max-width: 767px)"
+                                                       srcset="
+                                                            ./images/portfolio/prt-9-mob@1x.png,
+                                                            ./images/portfolio/prt-9-mob@2x.png
+                                                       "
+                                                       type="image/jpg"
+                                                  />
+
+                                                  <img
+                                                       class="team-foto"
+                                                       src="./images/portfolio/prt-9-mob@1x.png"
+                                                       alt="Приклад роботи"
+                                                       width="450px"
+                                                       height="294"
+                                                       loading="lazy"
+                                                  />
+                                             </picture>
+                                             <p class="product__position">
+                                                  Ресурс пропонує комплексні пропозиції з різним
+                                                  рівнем функціоналу та сервісів. Все це дозволить
+                                                  відвідувачу отримати вичерпні відомості про
+                                                  компанію чи приватну особу.
+                                             </p>
+                                        </div>
+                                        <div class="product-work">
+                                             <h3 class="product-work__title">Growing Business</h3>
+                                             <p class="product-work__description">Додаток</p>
+                                        </div></a
+                                   >
+                              </li>
+                         </ul>
+                    </div>
+               </section>
+          </main>
+          <!--футер-->
+          <footer class="footer">
+               <div class="conteiner footer__conteiner">
+                    <div class="footer__info">
+                         <div class="footer__adress">
+                              <a href="./index.html" class="logo futter__logo--location"
+                                   >Web<span class="logo__footer">Studio</span></a
+                              >
+                              <address class="address">
+                                   <ul class="address__list list">
+                                        <li class="address-list__item">
+                                             <a href="" class="address-list__main"
+                                                  >г. Київ, пр-т Лесі Українки, 26</a
+                                             >
+                                        </li>
+                                        <li class="address-list__item">
+                                             <a
+                                                  href="mailto:info@example.com"
+                                                  class="address-list__contact"
+                                                  >info@example.com</a
+                                             >
+                                        </li>
+                                        <li class="address-list__item">
+                                             <a
+                                                  href="tel:+380991111111"
+                                                  class="address-list__contact"
+                                                  >+38 099 111 11 11</a
+                                             >
+                                        </li>
+                                   </ul>
+                              </address>
+                         </div>
+                         <div class="fotter-networks">
+                              <h3 class="invite">Приєднуйтесь</h3>
+                              <ul class="network network-footer--location list">
+                                   <li class="network__item">
+                                        <a href="" class="network__site">
+                                             <svg class="network-icon" width="20px" height="20px">
+                                                  <use
+                                                       href="./images/symbol-defs.svg#instagram-1"
+                                                  ></use>
+                                             </svg>
+                                        </a>
+                                   </li>
+                                   <li class="network__item">
+                                        <a href="" class="network__site">
+                                             <svg class="network-icon" width="20px" height="20px">
+                                                  <use
+                                                       href="./images/symbol-defs.svg#twitter-1"
+                                                  ></use>
+                                             </svg>
+                                        </a>
+                                   </li>
+                                   <li class="network__item">
+                                        <a href="" class="network__site">
+                                             <svg class="network-icon" width="20px" height="20px">
+                                                  <use
+                                                       href="./images/symbol-defs.svg#facebook-1"
+                                                  ></use>
+                                             </svg>
+                                        </a>
+                                   </li>
+                                   <li class="network__item">
+                                        <a href="" class="network__site">
+                                             <svg class="network-icon" width="20px" height="20px">
+                                                  <use
+                                                       href="./images/symbol-defs.svg#instagram-1"
+                                                  ></use>
+                                             </svg>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <form class="form-min">
+                         <legend class="form-min__title">Підпишіться на розсилку</legend>
+                         <div class="form-min__subscription">
+                              <label for="mail"></label>
+                              <input
+                                   type="emeil"
+                                   name=""
+                                   id="mail"
+                                   class="form-min__mail"
+                                   placeholder="E-mail"
+                              />
+                              <button type="submit" class="button footer__button"
+                                   >Підписатися
+                                   <span class="button__icon">
+                                        <svg width="24px" height="24px">
+                                             <use
+                                                  href="./images/symbol-defs.svg#icon-footer-icon"
+                                             ></use>
+                                        </svg>
+                                   </span>
+                              </button>
+                         </div>
+                    </form>
+               </div>
+          </footer>
+          <script src="./js/menu.js"></script>
+     </body>
+</html>

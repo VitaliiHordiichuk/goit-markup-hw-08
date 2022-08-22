@@ -1,0 +1,19 @@
+.header {
+   
+    border-bottom: 1px solid $frame-color;
+
+
+    @media screen and (min-width: 768px) and (max-width: (1200px-0.02)) {
+            padding-top: 21px;
+            padding-bottom: 21px;
+    
+        }
+}
+
+.header__conteiner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,82 @@
+.section-team {
+    background-color: $secondary-bgr-color;
+}
+
+.team {
+    display: flex;
+    gap: 30px;
+flex-wrap: wrap;
+}
+
+.team__item {
+    width: 100%;
+    
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px)/2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px)/4);
+        }
+    background-color: $prinary-bgr-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.team-foto{
+    width: 100%;
+}
+
+.team__person {
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 30px;
+    }
+}
+
+.team__name {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team__function {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: $description-text-color;
+}
+
+.network--location {
+    display: flex;
+    justify-content: center;
+}
+
+.taem-contacts__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    fill: #AFB1B8;
+
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+background-color: $accent-color;
+    fill: $white-text-color;
+    }
+}
+
+
