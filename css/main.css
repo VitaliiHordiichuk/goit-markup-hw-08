@@ -297,7 +297,22 @@ img {
   margin-left: 96px;
   color: #757575;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 479.98px) {
+  .contacts-header__item {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 64px;
+    color: #2196F3;
+    margin-left: 0;
+  }
+  .contacts-header__item:first-of-type {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 64px;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .contacts-header__item {
     font-size: 34px;
     line-height: 1.18;
@@ -380,6 +395,7 @@ img {
 
 .header-network {
   display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .header-network {
