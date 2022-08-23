@@ -41,7 +41,8 @@
     padding: 40px;
 
     @media screen and (max-width: (768px-0.02)){
-        max-width: calc(100vw - 30px);
+        max-width: 450px;
+        width: calc(100vw - 30px);
        
         
             margin-right: 15px;
