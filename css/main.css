@@ -145,7 +145,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 480px;
+    max-width: 480px;
     background-color: #FFFFFF;
   }
   .header__nave.is-open {
@@ -396,6 +396,7 @@ img {
 .header-network {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
 }
 @media screen and (min-width: 768px) {
   .header-network {
@@ -409,7 +410,6 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
-  padding-left: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
